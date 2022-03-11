@@ -56,7 +56,7 @@ class Loginpage extends StatelessWidget {
                      Navigator.pushNamed(context, "/themepage");
 
                     },
-                    child: Text("Sign In",), 
+                    child: Text("Sign In", style: TextStyle(color: Colors.white), ), 
                     ),
                   ),
 
