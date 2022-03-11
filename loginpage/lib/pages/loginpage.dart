@@ -23,14 +23,16 @@ class Loginpage extends StatelessWidget {
               child: Column(
                 children: [
                   Form(child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         TextFormField(
                           obscureText: false,
                           decoration: InputDecoration(
                             hintText: "Enter your name",
                             labelText: "Name",
+                            border: OutlineInputBorder(),
                             
                   
                           ),
@@ -40,7 +42,8 @@ class Loginpage extends StatelessWidget {
                           obscureText: true,
                           decoration: InputDecoration(
                             hintText: "Enter password",
-                            labelText: "Password"
+                            labelText: "Password",
+                            border: OutlineInputBorder(),
                             
                           ),
                         ),
@@ -69,50 +72,7 @@ class Loginpage extends StatelessWidget {
            
          ],
        ),
-      // Padding(
-      //   padding: const EdgeInsets.all(16.0),
-      //   child: SingleChildScrollView(
-      //     child: Card(
-      //       child: Column(
-      //         children: [
-      //           Form(child: Padding(
-      //             padding: const EdgeInsets.all(8.0),
-      //             child: Column(
-      //               children: [
-      //                 TextFormField(
-      //                   decoration: InputDecoration(
-      //                     hintText: "Enter your name",
-      //                     labelText: "Name",
-                
-      //                   ),
-      //                 ),
-      //                 SizedBox(height: 20,),
-      //                 TextFormField(
-      //                   decoration: InputDecoration(
-      //                     hintText: "Enter password",
-      //                     labelText: "Password"
-                          
-      //                   ),
-      //                 ),
-      //               ],
-      //             ),
-      //           ),
-                
-      //           ),
-      //           SizedBox(height: 20,),
-      //           Padding(
-      //             padding: const EdgeInsets.all(8.0),
-      //             child: ElevatedButton(onPressed: () {
-                    
-      //             },child: Text("Sign In",), 
-      //             ),
-      //           ),
-
-                
-      //         ],
-      //       ),
-      //     ),),
-      // )
+      drawer: Drawer(),
       
     );
   }
