@@ -8,7 +8,7 @@ import 'package:loginpage/pages/themepage.dart';
     debugShowCheckedModeBanner: false,
     title: ("Login Page"),
     home: Loginpage(),
-    theme: ThemeData(primarySwatch: Colors.amber),
+    theme: ThemeData(primarySwatch: Colors.blue),
     routes: {
       "/loginpage":(context) => Loginpage(),
       "/themepage":(context) => Homepage(),
